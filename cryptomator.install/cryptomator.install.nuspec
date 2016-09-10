@@ -22,7 +22,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- This section is about this package, although id and version have ties back to the software -->
     <!-- id is lowercase and if you want a good separator for words, use '-', not '.'. Dots are only acceptable as suffixes for certain types of packages, e.g. .install, .portable, .extension, .template -->
     <!-- If the software is cross-platform, attempt to use the same id as the debian/rpm package(s) if possible. -->
-    <id>Cryptomator</id>
+    <id>cryptomator.install</id>
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
@@ -49,8 +49,9 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <bugTrackerUrl>https://github.com/cryptomator/cryptomator/issues</bugTrackerUrl>
     <tags>Cryptomator Encryption Cloud Open Source</tags>
     <summary>Free client-side encryption for your cloud files. Open source software: No backdoors, no registration.</summary>
-    <description>### Features
+    <description>Multi-platform transparent client-side encryption of your files in the cloud.
 
+### Features
 - Works with Dropbox, Google Drive, OneDrive, Nextcloud and any other cloud storage service which synchronizes with a local directory
 - Open Source means: No backdoors, control is better than trust
 - Client-side: No accounts, no data shared with any online service
@@ -60,7 +61,6 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
 - Use as many vaults in your Dropbox as you want, each having individual passwords
 
 ### Privacy
-
 - 256-bit keys (unlimited strength policy bundled with native binaries)
 - Scrypt key derivation
 - Cryptographically secure random numbers for salts, IVs and the masterkey of course
@@ -68,13 +68,11 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
 - Lightweight: [Complexity kills security](https://www.schneier.com/essays/archives/1999/11/a_plea_for_simplicit.html)
 
 ### Consistency
-
 - HMAC over file contents to recognize changed ciphertext before decryption
 - I/O operations are transactional and atomic, if the filesystems support it
 - Each file contains all information needed for decryption (except for the key of course), no common metadata means no [SPOF](http://en.wikipedia.org/wiki/Single_point_of_failure)
 
 ### Security Architecture
-
 - For more information on the security details visit [cryptomator.org](https://cryptomator.org/architecture/)</description>
 <releaseNotes>https://github.com/cryptomator/cryptomator/releases</releaseNotes>
     <!-- =============================== -->      
